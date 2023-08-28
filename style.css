@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 15px;
+    color: black;
+}
+
+.flex-container {
+    padding: 8% 3%;
+}
+
+.testimonials {
+    margin: 10px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.testimonial-1 {
+    background-color: hsl(263, 55%, 52%);
+    color: white;
+    position: relative;
+}
+
+.testimonial-2 {
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+}
+
+.testimonial-3 {
+    background-color: hsl(0, 0%, 100%);
+    color: black;
+}
+
+.testimonial-4 {
+    background-color:hsl(219, 29%, 14%);
+    color: white;
+}
+
+.testimonial-5 {
+    background-color:hsl(0, 0%, 100%);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+
+}
+
+img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.element {
+    margin-bottom: 15px;
+}
+
+#quote {
+    position: absolute;
+    right: 3px;
+    top: 0;
+    z-index: 1;
+}
+
+.testimonial-1 div, h3, p {
+    z-index: 2;
+    position: relative;
+
+}
+
+
+
+@media (min-width: 576px) {
+
+    .flex-container {
+        display: flex;
+        max-width: 1100px;
+    }
+
+    .left-grid {
+        flex-basis: 75%;
+
+    }
+
+    .right-grid {
+        flex-basis: 25%;
+    }
+
+    .top, .bottom {
+        display: flex;
+        flex-basis: 50%;
+    }
+
+    .testimonial-1 {
+        flex-basis: 70%;
+
+    }
+
+    .testimonial-2 {
+        flex-basis: 30%;
+    }
+
+    .testimonial-3 {
+        flex-basis: 30%;
+    }
+
+    .testimonial-4 {
+        flex-basis: 80%;
+    }
+}
+
+
+
+
+
+
+
